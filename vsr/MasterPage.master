@@ -1,0 +1,129 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" Codebehind="MasterPage.master.cs" %>
+<%@ Register Assembly="FredCK.FCKeditorV2" Namespace="FredCK.FCKeditorV2" TagPrefix="FCKeditorV2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>DD</title>
+    <asp:ContentPlaceHolder ID="cphMasterHeading" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<form id="Form1" runat="server">
+    <div id="headerPan" style="height: 120px;">
+        <div id="header_left" style="float: left; position: relative; width: 50%;">
+            <div id="header-logo" style="height: 99px;">
+                <a href="Default.aspx"><asp:Image ImageUrl="images/vsr-com-logo.png" runat="server" AlternateText="vsritual.com" /></a>
+            </div>
+        </div>
+        <div id="header_right" style="float:right; text-align: right; width: 49%;">                    
+            <asp:LoginView id="LoginView" runat="server" >
+                <AnonymousTemplate>
+                    <asp:Login ID="LoginControl" runat="server" CssClass="login"
+                        DisplayRememberMe="False" TitleText="" BackColor="#0f0f0f"
+                        BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="None" BorderWidth="1px" 
+                        Font-Names="Verdana" Font-Size="0.8em" ForeColor="#ababab">                                 
+                        <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                        <LabelStyle CssClass="login" Font-Size="Small" />
+                        <LoginButtonStyle CssClass="login"  BackColor="#fffbff" ForeColor="#284775" 
+                            BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" 
+                            Font-Names="Verdana" Font-Size="0.8em" />
+                        <TextBoxStyle Height="14px" Font-Size="0.8em" BackColor="Black" Width="128"
+                            BorderColor="#666666" ForeColor="White" />
+                        <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" Font-Size="0.9em" 
+                            ForeColor="White" />
+                    </asp:Login>
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                    <p id="LoggedInTemplate">
+                        Welcome back, <strong><asp:LoginName runat="server" /></strong> | 
+                        <asp:Hyperlink ID="lnkAdminPanel" runat="Server" Text="Admin" NavigateUrl="Admin.aspx" Visible="false" />
+                        <asp:LoginStatus runat="server" />
+                    </p>
+                </LoggedInTemplate>                                    
+            </asp:LoginView>
+            <asp:Label ID="lblLoginFail" runat="server" Text=""></asp:Label>
+        </div>
+        <div id="header-menu" style="clear: both;">
+            <asp:ContentPlaceHolder ID="cphTopMenu" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+    <div id="bodyPan">
+        <div id="bodydiv">
+            <asp:ContentPlaceHolder ID="cphMasterBody" runat="server">
+
+            </asp:ContentPlaceHolder>
+            
+        </div>
+        <div id="marketingdiv">
+            <script type="text/javascript"><!--
+                google_ad_client = "pub-3431937795864410";
+                /* vsr.com 120x600, created 9/17/09 */
+                google_ad_slot = "4676600033";
+                google_ad_width = 120;
+                google_ad_height = 600;
+                //-->
+            </script>
+            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="footerPan">
+        <div id="footerMainPan">
+            <div id="footerMenuPan">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="left">
+                            <a href="Default.aspx">Home</a>|                            
+                            <a href="Links.aspx">Links</a>|
+                            <a href="PhotoView.aspx">Photos</a>|
+                            <a href="Contact.aspx">Contact</a>|                            
+                            <a href="About.aspx">About</a>
+                            <% if((Request.IsAuthenticated) && Roles.IsUserInRole("Administrator")) {
+                                    Response.Write("|<a href=\"Admin.aspx\">Admin</a>");
+                                }                               
+                            %>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 14px;">
+                            <p class="footer-dark">
+                                Copyright &copy;2009<a href="#">vsritual.com</a> All rights reserved.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 14px;">                      
+                            <% /* <br />
+                            <p class="footer-dark">Site hosting by:</p>
+                            <a href="http://www.lunarpages.com/id/vsrdev0" onmouseover="window.status='http://www.lunarpages.com';return true" onmouseout="window.status='';return true" target="_blank">
+						    <img style="border: none" src="http://www.lunarpages.com/banners/images/winter/88x31.gif" alt="Lunarpages.com Web Hosting" /></a>											
+                            */ %>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>            
+    </div>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-10751621-1");
+            pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
+</form>
+</body>
+</html>

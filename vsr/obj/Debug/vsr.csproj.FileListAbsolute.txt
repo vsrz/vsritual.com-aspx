@@ -1,0 +1,33 @@
+C:\Users\jvillegas\Documents\Visual Studio 2008\Projects\vsr\vsr\bin\vsr.dll
+C:\Users\jvillegas\Documents\Visual Studio 2008\Projects\vsr\vsr\bin\vsr.pdb
+C:\Users\jvillegas\Documents\Visual Studio 2008\Projects\vsr\vsr\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jvillegas\Documents\Visual Studio 2008\Projects\vsr\vsr\obj\Debug\vsr.dll
+C:\Users\jvillegas\Documents\Visual Studio 2008\Projects\vsr\vsr\obj\Debug\vsr.pdb
+C:\Users\ritual\Desktop\vsr\vsr\bin\vsr.dll
+C:\Users\ritual\Desktop\vsr\vsr\bin\vsr.pdb
+C:\Users\ritual\Desktop\vsr\vsr\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ritual\Desktop\vsr\vsr\obj\Debug\vsr.dll
+C:\Users\ritual\Desktop\vsr\vsr\obj\Debug\vsr.pdb
+C:\Users\ritual\Desktop\vsr\vsr\obj\Debug\vsr.Properties.Resources.resources
+C:\Users\ritual\Desktop\vsr\vsr\obj\Debug\vsr.csproj.GenerateResource.Cache
+C:\Documents and Settings\jvillegas\Desktop\vsr\vsr\bin\vsr.dll
+C:\Documents and Settings\jvillegas\Desktop\vsr\vsr\bin\vsr.pdb
+C:\Documents and Settings\jvillegas\Desktop\vsr\vsr\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jvillegas\Desktop\vsr\vsr\obj\Debug\vsr.Properties.Resources.resources
+C:\Documents and Settings\jvillegas\Desktop\vsr\vsr\obj\Debug\vsr.csproj.GenerateResource.Cache
+C:\Documents and Settings\jvillegas\Desktop\vsr\vsr\obj\Debug\vsr.dll
+C:\Documents and Settings\jvillegas\Desktop\vsr\vsr\obj\Debug\vsr.pdb
+C:\Users\jvillegas\Desktop\vsr\vsr\bin\vsr.dll
+C:\Users\jvillegas\Desktop\vsr\vsr\bin\vsr.pdb
+C:\Users\jvillegas\Desktop\vsr\vsr\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jvillegas\Desktop\vsr\vsr\obj\Debug\vsr.Properties.Resources.resources
+C:\Users\jvillegas\Desktop\vsr\vsr\obj\Debug\vsr.csproj.GenerateResource.Cache
+C:\Users\jvillegas\Desktop\vsr\vsr\obj\Debug\vsr.dll
+C:\Users\jvillegas\Desktop\vsr\vsr\obj\Debug\vsr.pdb
+C:\Users\jvillegas\Documents\Visual Studio 2008\WebSites\vsr\vsr\bin\vsr.dll
+C:\Users\jvillegas\Documents\Visual Studio 2008\WebSites\vsr\vsr\bin\vsr.pdb
+C:\Users\jvillegas\Documents\Visual Studio 2008\WebSites\vsr\vsr\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jvillegas\Documents\Visual Studio 2008\WebSites\vsr\vsr\obj\Debug\vsr.Properties.Resources.resources
+C:\Users\jvillegas\Documents\Visual Studio 2008\WebSites\vsr\vsr\obj\Debug\vsr.csproj.GenerateResource.Cache
+C:\Users\jvillegas\Documents\Visual Studio 2008\WebSites\vsr\vsr\obj\Debug\vsr.dll
+C:\Users\jvillegas\Documents\Visual Studio 2008\WebSites\vsr\vsr\obj\Debug\vsr.pdb

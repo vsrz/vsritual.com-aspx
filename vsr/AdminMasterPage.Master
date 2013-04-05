@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.master" CodeBehind="AdminMasterPage.master.cs" Inherits="vsr.AdminMasterPage" %>
+
+<asp:Content ID="Content0" runat="server" ContentPlaceHolderID="cphMasterHeading">
+    <asp:ContentPlaceHolder ID="cphHeading" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="cphTopMenu">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <ul>
+        <li class="header-menu-first-item"><a href="Admin.aspx?pid=0">Home</a></li>
+        <li><a href="Admin.aspx?pid=1">Edit Links</a></li>
+        <li><a href="Admin.aspx?pid=2">Edit Blog Page</a></li>
+        <li><a href="Admin.aspx?pid=3">Edit About Content</a></li>
+    </ul>
+</asp:Content>
+
+<asp:Content ID="masterBodyContent" ContentPlaceHolderID="cphMasterBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>

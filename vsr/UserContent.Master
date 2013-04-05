@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserContent.master.cs" MasterPageFile="~/MasterPage.master" Inherits="vsr.UserContent" %>
+
+<asp:Content ID="Content0" runat="server" ContentPlaceHolderID="cphMasterHeading">
+    <asp:ContentPlaceHolder ID="cphHeading" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="cphTopMenu">
+    <div>
+        <ul>
+            <li class="header-menu-first-item"><a href="/">Home</a></li>
+            <li><a href="Links.aspx">Links</a></li>
+            <li><a href="Contact.aspx">Contact</a></li>
+            <li><a href="About.aspx">About</a></li>
+            <% 
+                // Validate user in role to print admin link
+                if((Request.IsAuthenticated) && Roles.IsUserInRole("Administrator")) {
+                    Response.Write("<li><a href=\"Admin.aspx\">Admin</a></li>");
+                }                               
+            %>
+        </ul>
+    </div>
+</asp:Content>    
+
+<asp:Content ID="masterBodyContent" ContentPlaceHolderID="cphMasterBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+</asp:Content>

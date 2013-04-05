@@ -1,0 +1,5 @@
+C:\Users\jvillegas\Desktop\vsr\vsr\bin\vsr.dll
+C:\Users\jvillegas\Desktop\vsr\vsr\bin\vsr.pdb
+C:\Users\jvillegas\Desktop\vsr\vsr\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jvillegas\Desktop\vsr\vsr\obj\Release\vsr.dll
+C:\Users\jvillegas\Desktop\vsr\vsr\obj\Release\vsr.pdb

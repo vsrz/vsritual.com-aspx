@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CommentSystem>
+  <Source>
+    <Comment>
+      <When></When>
+      <By></By>
+      <IPSource></IPSource>
+      <Text></Text>      
+    </Comment> 
+  </Source>
+</CommentSystem>
